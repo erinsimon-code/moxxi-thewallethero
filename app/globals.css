@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary */
+  --midnight: #0B0F19;   /* Midnight — page background, header, footer */
+  --panel: #111827;      /* Panel — cards, form panels, sections needing separation */
+  --gold: #C8A96B;       /* Gold — primary buttons, links, icons, accent bars, focus rings */
+  --gold-light: #E5D3A3; /* Light gold — hover states, small highlights, badges, eyebrow labels */
+
+  /* Neutrals */
+  --cream: #F9FAFB;      /* headings and body text */
+  --steel: #9CA3AF;      /* secondary text, disclosures */
+  --hairline: #1F2937;   /* borders/dividers */
+  --field-border: #374151; /* input borders */
+
+  --background: var(--midnight);
+  --foreground: var(--cream);
+  --border: var(--hairline);
+}
+
+@theme inline {
+  --color-midnight: var(--midnight);
+  --color-panel: var(--panel);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-cream: var(--cream);
+  --color-steel: var(--steel);
+  --color-hairline: var(--hairline);
+  --color-field-border: var(--field-border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-dm-sans);
+  --font-heading: var(--font-outfit);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+/* Accent bar for the /verify card — uses existing theme tokens only. */
+.verify-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.375rem; /* 6px */
+  background: var(--gold);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
