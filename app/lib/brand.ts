@@ -6,14 +6,14 @@ export const DOMAIN = "thewallethero.com";
 export const SITE_URL = `https://${DOMAIN}`;
 
 // --- Legal / contact details -------------------------------------------
-export const LEGAL_NAME = "LifeCycleLoop LLC";
+export const LEGAL_NAME = "The Wallet Hero LLC";
 export const ADDRESS = "3 Germay Dr, Unit 4 #3226, Wilmington, DE 19804, United States";
 export const PHONE = "+13022080355"; // E.164, used in tel: links
 export const PHONE_DISPLAY = "(302) 208-0355";
 export const EMAIL = "support@thewallethero.com";
 
 // Used on /privacy, /sms-terms and /terms where the operator must be named explicitly.
-export const OPERATOR_LINE = "The Wallet Hero, operated by LifeCycleLoop LLC";
+export const OPERATOR_LINE = "The Wallet Hero, operated by The Wallet Hero LLC";
 
 // Required addition to the /sms-terms program description section.
 export const TOLL_FREE_NOTE = "Messages are sent from a toll-free number.";
@@ -27,7 +27,7 @@ export const POSITIONING_PARAGRAPH =
 // Word-for-word program description, required on /how-it-works, /sms-terms,
 // /privacy and /terms.
 export const PROGRAM_DESCRIPTION =
-  "The Wallet Hero is an employer-sponsored financial wellness education program operated by LifeCycleLoop LLC. Current employees of participating employers join using a company ID and can choose to receive account notification texts (lesson reminders, learning track due dates, monthly savings-goal check-ins and one-time verification codes) and/or promotional texts (new money lessons, money challenges and live workshops offered by their employer). The Wallet Hero provides general education only and never offers loans, credit, investment products or third-party offers. Participation is voluntary and not a condition of employment.";
+  "The Wallet Hero is an employer-sponsored financial wellness education program operated by The Wallet Hero LLC. Current employees of participating employers join using a company ID and can choose to receive account notification texts (lesson reminders, learning track due dates, monthly savings-goal check-ins and one-time verification codes) and/or promotional texts (new money lessons, money challenges and live workshops offered by their employer). The Wallet Hero provides general education only and never offers loans, credit, investment products or third-party offers. Participation is voluntary and not a condition of employment.";
 
 // Education-only disclaimer required in the footer of every page except
 // /verify, and on /lessons, /tools and /faq.
